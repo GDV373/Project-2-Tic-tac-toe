@@ -6,6 +6,7 @@
   :root {
     --cell-size: 100px;
     --mark-size: calc(var(--cell-size) * .9);
+    --Charizard-x: url('/assets/images/mega-charizard-x-flying.gif')
   }
 /* to remove all margins for the page */  
   body {
@@ -56,4 +57,18 @@
 .cell:nth-child(8),
 .cell:nth-child(7) {
   border-bottom: none;
+}
+
+.cell.x{
+  background-image: url('/assets/images/mega-charizard-x-flying.gif') ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cell.y{
+  background-image: url('/assets/images/mega-charizard-y-flying.gif') ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
