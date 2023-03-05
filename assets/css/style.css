@@ -6,8 +6,8 @@
   :root {
     --cell-size: 100px;
     --mark-size: calc(var(--cell-size) * .9);
-    --Charizard-x: url('/assets/images/mega-charizard-x-flying.gif')
   }
+  
 /* to remove all margins for the page */  
   body {
     margin: 0;
@@ -67,6 +67,9 @@
   border-bottom: none;
 }
 
+
+  
+/* to set hover images into cell for x with rules*/ 
 .cell.x,
 .board.x .cell:not(.x):not(.y):hover{
   background-image: url('/assets/images/mega-charizard-x-flying.gif') ;
@@ -75,10 +78,47 @@
   background-position: center;
 }
 
+/* to set hover images into cell for y with rules*/ 
 .cell.y,
 .board.y .cell:not(.x):not(.y):hover{
   background-image: url('/assets/images/mega-charizard-y-flying.gif') ;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+
+/* to set winning message display*/ 
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+/* to set set winning message button */ 
+.winning-message button {
+  font-size: 3rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  cursor: pointer;
+}
+
+.winning-message button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.winning-message.show {
+  display: flex;
 }
