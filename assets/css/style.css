@@ -1,6 +1,7 @@
 /* select eveything after and before elements to size the border of the box */
 *, *::after, *::before {
     box-sizing: border-box;
+    text-align: center;
   }
 
   :root {
