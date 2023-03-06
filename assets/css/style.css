@@ -15,6 +15,7 @@
     background-image: url('https://img.freepik.com/free-vector/meadow-with-green-grass-conifers-hills_107791-10037.jpg?w=1380&t=st=1678115312~exp=1678115912~hmac=470ed800b50d13d807d2c2c44dbf15b5941db186cfafbef8753039f5f7c4132b');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
  
   

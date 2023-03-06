@@ -20,16 +20,27 @@ const WINNING_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
   ]
-
+restartButton.addEventListener('click', startGame)
 //set turn for player y
 let YTurn
 
 //start game function 
+toggleScreen()
+
+
+function toggleScreen(id, toggle) {
+  let element = document.getElementById(id);
+  let display = (toggle) ? 'grid' : 'none';
+  element.style.display = display;
+ }
+
 startGame()
 
-restartButton.addEventListener('click', startGame)
+
 
 function startGame() {
+  toggleScreen('start-screen', false);
+  toggleScreen('board', true);
   YTurn = false
   cellElements.forEach(cell => {
     cell.classList.remove(X_CLASS)
