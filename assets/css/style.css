@@ -180,3 +180,34 @@
   position: absolute;
   width: 100%;
 }
+
+/* to set set the title */ 
+h6 {
+  text-align: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 1%;
+}
+
+/* to set set the rules in start screen */ 
+#startGameRules p {
+  font-size: x-large;
+  position: fixed;
+  text-align: center;
+  bottom: 5%;
+  width: 100%;
+}
+
+/* to set set the media quries for smaller screens*/ 
+@media screen and (max-width: 710px) { 
+  #charStartScreen { padding-top: 10%; }
+}
+
+@media screen and (max-width: 524px) { 
+  #charStartScreen { padding-top: 20%; }
+}
+
+@media screen and (max-width: 423px) { 
+  #charStartScreen { padding-top: 40%; }
+}
