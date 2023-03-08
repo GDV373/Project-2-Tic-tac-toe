@@ -162,12 +162,14 @@
   float: right;
   width: 50%;
   padding-top: 7%;
+  max-width: 450px;
 }
 
 #Charizard-X-Home img {
   float: left;
   width: 50%;
   padding-top: 7%;
+  max-width: 450px;
 }
 
 #charStartScreen{
