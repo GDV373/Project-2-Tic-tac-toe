@@ -94,7 +94,7 @@
 
 
 /* to set winning message display*/ 
-.winning-message {
+.winning-message{
   display: none;
   position: fixed;
   top: 0;
@@ -110,7 +110,7 @@
 }
 
 /* to set set winning message button */ 
-.winning-message button {
+.winning-message button{
   font-size: 3rem;
   background-color: white;
   border: 1px solid black;
@@ -126,4 +126,55 @@
 
 .winning-message.show {
   display: flex;
+}
+
+#start-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+#start-screen button {
+  font-size: 3rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  cursor: pointer;
+}
+
+#start-screen button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+/* to set set the images on the start screen */ 
+
+#Charizard-Y-Home img {
+  float: right;
+  width: 50%;
+  padding-top: 7%;
+}
+
+#Charizard-X-Home img {
+  float: left;
+  width: 50%;
+  padding-top: 7%;
+}
+
+#charStartScreen{
+  height: 50%;
+}
+
+#startGameSection {
+  position: absolute;
+  width: 100%;
 }
