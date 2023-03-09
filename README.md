@@ -12,13 +12,19 @@ Several screenshots of the website can be found below illustrating the progressi
 ## Page on load
 This screenshot is what a user will see before they start the game to give some instructions on what the game is, how to start and what the first player will have as his Charizard.
 
+![Screenshot of website on page load](/assets/images/README_images/Start_Screen.png "Website screenshot on page load")<br> 
 
-![Screenshot of website on page load] "Website screenshot on page  load")
 ## Page Start Game
 This screenshot is taken after a user has started the game and players started to pace there Charizards for battel.
 
-![Screenshot of website page] "Website screenshot")
+![Screenshot of website on page load](/assets/images/README_images/Blank_Game_Screen.png "game start screenshot")<br> 
 
+![Screenshot of website on page load](/assets/images/README_images/Partly_Filled_Game_Screen.png "game start with players playing screenshot")<br> 
+
+## Page win screen
+This screenshot is when one of the players wins. The same screen will toggel by changing the winners name or draw if there is no winner
+
+![Screenshot of website on page load](/assets/images/README_images/Win_Screen.png "game won screenshot")<br> 
 
 # Technologies Used
 HTML, CSS, JavaScript

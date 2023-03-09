@@ -10,6 +10,8 @@ const winningMessageElement = document.getElementById('winningMessage');
 const restartButton = document.getElementById('restartButton');
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]');
 
+const startGameClick = document.getElementById('startGameClick');
+
 // set combnations into arrays
 const WINNING_COMBINATIONS = [
     [0, 1, 2],
@@ -22,23 +24,19 @@ const WINNING_COMBINATIONS = [
     [2, 4, 6]
 ];
 
-restartButton.addEventListener('click', startGame);
 //set turn for player y
 let YTurn;
 
-//start game function 
-toggleScreen();
+startGameClick.addEventListener('click', startGame);
+restartButton.addEventListener('click', startGame);
 
-
+//toggel function to swap from start screen to game to result screen
 function toggleScreen(id, toggle) {
     let element = document.getElementById(id);
     let display = (toggle) ? 'grid' : 'none';
     element.style.display = display;
 }
-
-startGame();
-
-
+//start game function 
 
 function startGame() {
     toggleScreen('start-screen', false);
