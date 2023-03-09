@@ -40,7 +40,11 @@ The single page structure is built using  tooglescreen functions so that the use
 
 Before beginning development, a wireframe was mocked up. The idea behind the design was to keep the flow and structure consistent between the desktop and mobile versions while maintaining a similar layout. Because of this, distinct wireframes for each type of device were not made. This is a wireframe that shows the results message (post submission).  <br>  
 
-![Screenshot of website page]  "Wireframe")<br>  
+![Screenshot of website starting page](/assets/images/README_images/WireFrame_Game_Start_Screen.png  "Start Screen Wireframe")<br>  
+
+![Screenshot of website starting page](/assets/images/README_images/WireFrame_Game_Screen.png  "Game Screen Wireframe")<br>  
+
+![Screenshot of website starting page](/assets/images/README_images/WireFrame_End_Screen.png  "End Screen Wireframe")<br>  
 
 
 
