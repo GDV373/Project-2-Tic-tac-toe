@@ -1,213 +1,219 @@
 /* select eveything after and before elements to size the border of the box */
-*, *::after, *::before {
-    box-sizing: border-box;
-    text-align: center;
-  }
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	text-align: center;
+}
 
-  :root {
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size) * .9);
-  }
-  
-/* to remove all margins for the page */  
-  body {
-    margin: 0;
-    background-image: url('https://img.freepik.com/free-vector/meadow-with-green-grass-conifers-hills_107791-10037.jpg?w=1380&t=st=1678115312~exp=1678115912~hmac=470ed800b50d13d807d2c2c44dbf15b5941db186cfafbef8753039f5f7c4132b');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
- 
-  
-/* set the board and the cells */ 
-  .board {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, auto)
-  }
-  
-  .cell {
-    width: var(--cell-size);
-    height: var(--cell-size);
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-  }
+:root {
+	--cell-size: 100px;
+	--mark-size: calc(var(--cell-size) * .9);
+}
 
-/* cursor pionter settings */ 
-.cell.x,
-.cell.y{
-  cursor: not-allowed;
+/* to remove all margins for the page */
+body {
+	margin: 0;
+	background-image: url('https://img.freepik.com/free-vector/meadow-with-green-grass-conifers-hills_107791-10037.jpg?w=1380&t=st=1678115312~exp=1678115912~hmac=470ed800b50d13d807d2c2c44dbf15b5941db186cfafbef8753039f5f7c4132b');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 
-  
-/* to remove all outside borders */ 
+/* set the board and the cells */
+.board {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto)
+}
+
+.cell {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+/* cursor pionter settings */
+.cell.x,
+.cell.y {
+	cursor: not-allowed;
+}
+
+
+/* to remove all outside borders */
 
 .cell:first-child,
 .cell:nth-child(2),
 .cell:nth-child(3) {
-  border-top: none;
+	border-top: none;
 }
 
 .cell:nth-child(3n + 1) {
-  border-left: none;
+	border-left: none;
 }
 
 .cell:nth-child(3n + 3) {
-  border-right: none;
+	border-right: none;
 }
 
 .cell:last-child,
 .cell:nth-child(8),
 .cell:nth-child(7) {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 
-  
-/* to set hover images into cell for x with rules*/ 
+/* to set hover images into cell for x with rules*/
 .cell.x,
-.board.x .cell:not(.x):not(.y):hover{
-  background-image: url(../images/mega-charizard-x-flying.gif) ;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.board.x .cell:not(.x):not(.y):hover {
+	background-image: url(../images/mega-charizard-x-flying.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
-/* to set hover images into cell for y with rules*/ 
+/* to set hover images into cell for y with rules*/
 .cell.y,
-.board.y .cell:not(.x):not(.y):hover{
-  background-image: url(../images/mega-charizard-y-flying.gif) ;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.board.y .cell:not(.x):not(.y):hover {
+	background-image: url(../images/mega-charizard-y-flying.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
 
-/* to set winning message display*/ 
-.winning-message{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 5rem;
-  flex-direction: column;
+/* to set winning message display*/
+.winning-message {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .9);
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 5rem;
+	flex-direction: column;
 }
 
-/* to set set winning message button */ 
-.winning-message button{
-  font-size: 3rem;
-  background-color: white;
-  border: 1px solid black;
-  padding: .25em .5em;
-  cursor: pointer;
+/* to set set winning message button */
+.winning-message button {
+	font-size: 3rem;
+	background-color: white;
+	border: 1px solid black;
+	padding: .25em .5em;
+	cursor: pointer;
 }
 
 .winning-message button:hover {
-  background-color: black;
-  color: white;
-  border-color: white;
+	background-color: black;
+	color: white;
+	border-color: white;
 }
 
 .winning-message.show {
-  display: flex;
+	display: flex;
 }
 
 #start-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 5rem;
-  flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .9);
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 5rem;
+	flex-direction: column;
 }
 
 #start-screen button {
-  font-size: 3rem;
-  background-color: white;
-  border: 1px solid black;
-  padding: .25em .5em;
-  cursor: pointer;
+	font-size: 3rem;
+	background-color: white;
+	border: 1px solid black;
+	padding: .25em .5em;
+	cursor: pointer;
 }
 
 #start-screen button:hover {
-  background-color: black;
-  color: white;
-  border-color: white;
+	background-color: black;
+	color: white;
+	border-color: white;
 }
 
-/* to set set the images on the start screen */ 
+/* to set set the images on the start screen */
 
 #Charizard-Y-Home img {
-  float: right;
-  width: 50%;
-  padding-top: 7%;
-  max-width: 450px;
+	float: right;
+	width: 50%;
+	padding-top: 7%;
+	max-width: 450px;
 }
 
 #Charizard-X-Home img {
-  float: left;
-  width: 50%;
-  padding-top: 7%;
-  max-width: 450px;
+	float: left;
+	width: 50%;
+	padding-top: 7%;
+	max-width: 450px;
 }
 
-#charStartScreen{
-  height: 50%;
+#charStartScreen {
+	height: 50%;
 }
 
 #startGameSection {
-  position: absolute;
-  width: 100%;
+	position: absolute;
+	width: 100%;
 }
 
-/* to set set the title */ 
+/* to set set the title */
 h6 {
-  text-align: center;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  margin: 1%;
+	text-align: center;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	margin: 1%;
 }
 
-/* to set set the rules in start screen */ 
+/* to set set the rules in start screen */
 #startGameRules p {
-  font-size: x-large;
-  position: fixed;
-  text-align: center;
-  bottom: 5%;
-  width: 100%;
+	font-size: x-large;
+	position: fixed;
+	text-align: center;
+	bottom: 5%;
+	width: 100%;
 }
 
-/* to set set the media quries for smaller screens*/ 
-@media screen and (max-width: 710px) { 
-  #charStartScreen { padding-top: 10%; }
+/* to set set the media quries for smaller screens*/
+@media screen and (max-width: 710px) {
+	#charStartScreen {
+		padding-top: 10%;
+	}
 }
 
-@media screen and (max-width: 524px) { 
-  #charStartScreen { padding-top: 20%; }
+@media screen and (max-width: 524px) {
+	#charStartScreen {
+		padding-top: 20%;
+	}
 }
 
-@media screen and (max-width: 423px) { 
-  #charStartScreen { padding-top: 40%; }
+@media screen and (max-width: 423px) {
+	#charStartScreen {
+		padding-top: 40%;
+	}
 }

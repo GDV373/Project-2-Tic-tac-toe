@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta name="description" content="Tik-Tac-Toe Charizard Eddition Online Game">
     <meta name="keywords" content="Tik-Tac-Toe,Charizard,online,game">
-
-    <link rel="shortcut icon" type="image/jpeg"  href="./assets/images/Charizard_favicon.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="./assets/images/Charizard_favicon.jpeg">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js" defer></script>
     <title>Tik-Tak-Toe Pokemon Team</title>
-    
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="board" id="board" style="display: none;">
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
@@ -27,31 +23,26 @@
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
     </div>
-
-    <div id="start-screen" class="screen"  >
-        <section id = "charStartScreen">
+    <div id="start-screen" class="screen">
+      <section id="charStartScreen">
         <div id="Charizard-X-Home">
-        <img src="./assets/images/mega-charizard-x-flying.gif">
+          <img src="./assets/images/mega-charizard-x-flying.gif" alt="mega charizard X">
         </div>
-        <div id="Charizard-Y-Home"> 
-            <img src="./assets/images/mega-charizard-y-flying.gif">
+        <div id="Charizard-Y-Home">
+          <img src="./assets/images/mega-charizard-y-flying.gif" alt="mega charizard Y">
         </div>
-        </section>
-
-        <section id = "startGameSection">
+      </section>
+      <section id="startGameSection">
         <button onclick="startGame()">Start Game</button>
-        </section>
-
-        <section id="startGameRules">
-            <h6>Tic-Tac-Toe Charizard Edition</h6>
-            <p>Press start game. First player will start with Charizard X (Blue)</p>
-        </section>
+      </section>
+      <section id="startGameRules">
+        <h6>Tic-Tac-Toe Charizard Edition</h6>
+        <p>Press start game. First player will start with Charizard X (Blue)</p>
+      </section>
     </div>
-
     <div class="winning-message" id="winningMessage">
-        <div data-winning-message-text></div>
-        <button id="restartButton">Restart</button>
+      <div data-winning-message-text></div>
+      <button id="restartButton">Restart</button>
     </div>
-
   </body>
-  </html>
+</html>
