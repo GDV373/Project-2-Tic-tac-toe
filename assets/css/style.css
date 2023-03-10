@@ -172,11 +172,11 @@ body {
 	max-width: 450px;
 }
 
-#charStartScreen {
+#char-start-screen {
 	height: 50%;
 }
 
-#startGameSection {
+#start-game-section {
 	position: absolute;
 	width: 100%;
 }
@@ -191,7 +191,7 @@ h6 {
 }
 
 /* to set set the rules in start screen */
-#startGameRules p {
+#start-game-rules p {
 	font-size: x-large;
 	position: fixed;
 	text-align: center;
@@ -201,19 +201,19 @@ h6 {
 
 /* to set set the media quries for smaller screens*/
 @media screen and (max-width: 710px) {
-	#charStartScreen {
+	#char-start-screen {
 		padding-top: 10%;
 	}
 }
 
 @media screen and (max-width: 524px) {
-	#charStartScreen {
+	#char-start-screen {
 		padding-top: 20%;
 	}
 }
 
 @media screen and (max-width: 423px) {
-	#charStartScreen {
+	#char-start-screen {
 		padding-top: 40%;
 	}
 }

@@ -6,11 +6,11 @@ const Y_CLASS = 'y';
 //setting const to shorten code to get data
 const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.getElementById('board');
-const winningMessageElement = document.getElementById('winningMessage');
-const restartButton = document.getElementById('restartButton');
+const winningMessageElement = document.getElementById('winning-message-id');
+const restartButton = document.getElementById('restart-button');
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]');
 
-const startGameClick = document.getElementById('startGameClick');
+const startGameClick = document.getElementById('start-game-click');
 
 // set combnations into arrays
 const WINNING_COMBINATIONS = [
