@@ -40,7 +40,7 @@ The strategic aim is to create a site that can run this game on any web browser.
 This version is intended to offer a quick fun 2 player game using HTML, CSS and Javascript.
 
 ## Structure
-The single page structure is built using  tooglescreen functions so that the user can progress from one point to another with out needing to go back or refreshing to keep playing.
+The single page structure is built using  togglescreen functions so that the user can progress from one point to another with out needing to go back or refreshing to keep playing.
 
 ## Skeleton (insert wirefames)
 
@@ -55,13 +55,12 @@ Before beginning development, a wireframe was mocked up. The idea behind the des
 
 
 ## Surface
-The colour scheme is primarily limited to black text on a white page. The limited palette of this design and use of whitespace is intended to maximize simplicity, increase credibility and readability. The title and associated icon (together serving as a logo) is green as a visual reference to Ireland. The sans serif font (Roboto) was selected for its modernity, cleanliness and simplicity, to match the overall design. 
+The game runs on screens to cover the starting image background of the game. This will change once the player starts the game and reveals the game to start playing.The same type of screen will cover it again with an end screen of win or draw and a restart button to start the game again.
+
 
 ## Features
 ### Features included in this current version
-The Start screen menu will provide the player 1 with that character will start to play with, and a start button will toggle  to the Game screen.
-The game screen will start with a blank grid waiting for players to do their move's.
-Depending on the result either a win screen for the player who connects 3, with their characters name will pop or a draw screen if no character manages to do any of the possible combinations for a win. Followed by a restart button to play again.
+The START screen menu shows the name of the game, in this case Tic-Tac-Toe: Charizard Edition. The START screen also includes some information on how the game starts, with player one starting with Charizard X (the blue) and also the START GAME button. Once the START GAME button is clicked, the game begins. The game screen starts with a blank grid. Player 1 (blue) starts the game by clicking on one of the empty grids and then player 2 (orange) will follow, following the rules of a classic Tic-Tac-Toe game. The game ends when a player connects three of the same character (either blue or orange). The WIN screen will show which winning character won (Player X or Player Y). If no one wins the game, a DRAW screen will appear. A RESTART button will appear once the game is finished to start another new game. 
 
 
 ### Features planned for later versions
