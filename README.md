@@ -59,12 +59,10 @@ The colour scheme is primarily limited to black text on a white page. The limite
 
 ## Features
 ### Features included in this current version
-Start screen menu to provide with what player 1 will start using as a character to play with, and a start button.
-Game screen will start with a blank grid waiting for players to do their move's.
-Depending on the result either a win screen for the player who connects 3 with their characters name will pop or a draw screen if no character manages to do any of the possible combinations for a win. Followed by a restart button to play again.
- 
+The Start screen menu will provide the player 1 with that character will start to play with, and a start button will toggel to the Game screen.
+The game screen will start with a blank grid waiting for players to do their move's.
+Depending on the result either a win screen for the player who connects 3, with their characters name will pop or a draw screen if no character manages to do any of the possible combinations for a win. Followed by a restart button to play again.
 
-![Screenshot of website page] "Website screenshot of dates")
 
 ### Features planned for later versions
 Pokemon music is planned to be added in different screens in a later version with the winning character to be presented in the winning screen.
@@ -78,29 +76,69 @@ When using Gitpod, files can be added to staging by using 'git add .' on the bas
 All tests peformed on 'github.com/GDV373/Project-2-Tic-tac-toe' on Chrome, Safari and Firefox browsers on multyple computer screens and sizes. Different mobile screen and browsers were also tested. The exception to this is the Lighthouse accesssibility test which was performed on Chrome only.
 
 ## 1. Functionality Testing
+### Test label: Testing start screen 
+| Test step | Outcome |
+| --- | --- |
+| Test action | Testing start screen toggle, Loading Chartizard's on each side with text and buttons .  |
+| Expected outcome | Page should load with all images and start game button. The Button should work to toggel the screen and only work when pressed inside it.  |
+| Notes | None to add |
+| Test outcome | PASS |
 
+### Test label: Testing players rules of input 
+| Test step | Outcome |
+| --- | --- |
+| Test action | Enter Characters (with valid or invalid input positions) into the designated boxes.  |
+| Expected outcome | Only 1 Character at a time can place a move and cannot replace any used boxes by other players or waste moves by placing again on the same one used.  |
+| Notes | None to add |
+| Test outcome | PASS |  
+
+### Test label: Testing winning and draw screens 
+| Test step | Outcome |
+| --- | --- |
+| Test action | Testing the outcome of the screens when the rules of the game have been met, and loading of restart button.  |
+| Expected outcome | The winning screen should change to the winning character's name or to a draw screen with all screens loading a restart button for the players to start a new game.  |
+| Notes | None to add |
+| Test outcome | PASS |  
 
 ## 2. Browser Compatibility testing
-### Test label: Browser compatibility 
-
-
-## 3. Accesibility testing
-### Test label: Accessibility compatibility
+| Test step | Outcome |
+| --- | --- |
+| Test action | Testing all the functionalitry testing on different browsers|
+| Expected outcome | Multyple browser such as Chrome, fireFox and Safari were tested on all the functionallity including Mobile browsers.  |
+| Notes | None to add |
+| Test outcome | PASS |  
 
 
 ## 4. Validator Testing
 ### CSS validator testing
+| Test step | Outcome |
+| --- | --- |
+| Test action | Test code using W3S CSS validation service|
+| Expected outcome | Validation passed with no errors, PDF of the service is also attached here (/workspace/Project-2-Tic-tac-toe/PDF-Docs/CSS-Validation.pdf) |
+| Notes | None to add |
+| Test outcome | PASS |  
 
 
 ### HTML validator testing
-
+| Test step | Outcome |
+| --- | --- |
+| Test action | Test code using W3 Nu Html Checker|
+| Expected outcome | Validation passed with no errors, PDF of the service is also attached here (/workspace/Project-2-Tic-tac-toe/PDF-Docs/HTML-Validation.pdf) |
+| Notes | None to add |
+| Test outcome | PASS |  
 
 ### Javascript validator testing
+| Test step | Outcome |
+| --- | --- |
+| Test action | Test code using Online Javascript Validator - BeautifyTools.com|
+| Expected outcome | Validation passed with no errors, PDF of the service is also attached here (/workspace/Project-2-Tic-tac-toe/PDF-Docs/JavaScript-Validation.pdf) |
+| Notes | None to add |
+| Test outcome | PASS |  
 
 
 # Acknowledgements and Copyright
 
-Icon used as favicon from static.wikia.nocookie.net and Charizard gif from tenor.com.
+Icon used as favicon from static.wikia.nocookie.net, Charizard gif from tenor.com and backgorund of gameplay image from img.freepik.com.
 
 README structure based on Code Institute's example. The structure and approach to Testing reflects guidance from Brian Macharia.  
 
