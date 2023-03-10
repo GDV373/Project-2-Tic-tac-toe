@@ -12,19 +12,19 @@ Several screenshots of the website can be found below illustrating the progressi
 ## Page on load
 This screenshot is what a user will see before they start the game to give some instructions on what the game is, how to start and what the first player will have as his Charizard.
 
-![Screenshot of website on page load](/assets/images/README_images/Start_Screen.png "Website screenshot on page load")<br> 
+![Screenshot of website on page load](/assets/images/README_images/Start-Screen.png "Website screenshot on page load")<br> 
 
 ## Page Start Game
 This screenshot is taken after a user has started the game and players started to pace there Charizards for battel.
 
-![Screenshot of website on page load](/assets/images/README_images/Blank_Game_Screen.png "game start screenshot")<br> 
+![Screenshot of website on page load](/assets/images/README_images/Blank-Game-Screen.png "game start screenshot")<br> 
 
-![Screenshot of website on page load](/assets/images/README_images/Partly_Filled_Game_Screen.png "game start with players playing screenshot")<br> 
+![Screenshot of website on page load](/assets/images/README_images/Partly-Filled-Game-Screen.png "game start with players playing screenshot")<br> 
 
 ## Page win screen
 This screenshot is when one of the players wins. The same screen will toggel by changing the winners name or draw if there is no winner
 
-![Screenshot of website on page load](/assets/images/README_images/Win_Screen.png "game won screenshot")<br> 
+![Screenshot of website on page load](/assets/images/README_images/Win-Screen.png "game won screenshot")<br> 
 
 # Technologies Used
 HTML, CSS, JavaScript
@@ -46,11 +46,11 @@ The single page structure is built using  tooglescreen functions so that the use
 
 Before beginning development, a wireframe was mocked up. The idea behind the design was to keep the flow and structure consistent between the desktop and mobile versions while maintaining a similar layout. Because of this, distinct wireframes for each type of device were not made. This is a wireframe that shows the results message (post submission).  <br>  
 
-![Screenshot of website starting page](/assets/images/README_images/WireFrame_Game_Start_Screen.png  "Start Screen Wireframe")<br>  
+![Screenshot of website starting page](/assets/images/README_images/WireFrame-Game-Start-Screen.png  "Start Screen Wireframe")<br>  
 
-![Screenshot of website starting page](/assets/images/README_images/WireFrame_Game_Screen.png  "Game Screen Wireframe")<br>  
+![Screenshot of website starting page](/assets/images/README_images/WireFrame-Game-Screen.png  "Game Screen Wireframe")<br>  
 
-![Screenshot of website starting page](/assets/images/README_images/WireFrame_End_Screen.png  "End Screen Wireframe")<br>  
+![Screenshot of website starting page](/assets/images/README_images/WireFrame-End-Screen.png  "End Screen Wireframe")<br>  
 
 
 
